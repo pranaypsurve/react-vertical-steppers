@@ -1,0 +1,35 @@
+{
+  "name": "react-vertical-stepers",
+  "version": "1.0.8",
+  "description": "This package help to design UI with vertical steppers and with nested sterpes too with accordian",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "preview": "vite preview --port 5173"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0 || ^18.0.0",
+    "react-dom": "^19.0.0 || ^18.0.0"
+  },
+  "author": "Pranay Surve",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^5.24.8",
+    "rollup-plugin-import-css": "^3.5.8",
+    "scss": "^0.2.4",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@rollup/plugin-url": "^8.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rollup": "^4.40.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  }
+}

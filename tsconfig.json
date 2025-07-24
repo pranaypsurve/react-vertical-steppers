@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // 👈 Important for React 17+
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "declarationDir": "./dist",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["src", "types/**/*.d.ts", "index.tsx", "types", "index.tsx"],
+  "exclude": ["node_modules", "dist"]
+}
