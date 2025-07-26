@@ -1,16 +1,23 @@
 // rollup.config.js
 import commonjs from "@rollup/plugin-commonjs";
+import image from "@rollup/plugin-image";
 import resolve from "@rollup/plugin-node-resolve";
 import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
-import url from "@rollup/plugin-url";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import postcss from 'rollup-plugin-postcss';
+import packageJson from "./package.json" with { type: 'json' };
 
 export default {
-  input: "index.tsx", // ✅ Update this line
+  input: "./src/stepper/index.tsx", // ✅ Update this line
   output: [
     {
-      file: "dist/index.js",
+      file: packageJson.main,
+      format: "cjs",
+      sourcemap: true,
+    },
+    {
+      file: packageJson.module,
       format: "esm",
       sourcemap: false,
     },
@@ -20,12 +27,13 @@ export default {
     resolve(),
     commonjs(),
     typescript({ tsconfig: "./tsconfig.json" }),
-    url({
-      include: ["**/*.svg", "**/*.png", "**/*.jpg", "**/*.gif", "**/*.scss"],
-      limit: 0, // Forces files to be copied rather than inlined
-      fileName: "[name][extname]", // Keep original file names
-      destDir: "dist/assets", // Where to output the copied assets
-    }),
     terser(),
+    image(),
+    postcss({
+      extract: true,
+      modules: false,
+      use: ['sass'],
+    }),
   ],
+  external: ["react", "react-dom"],
 };

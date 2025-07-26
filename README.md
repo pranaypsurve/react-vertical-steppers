@@ -1,40 +1,50 @@
-# React Vertical Stepers
+# 🧭 React Vertical Stepper UI
 
 [![npm version](https://img.shields.io/npm/v/react-vertical-stepers.svg)](https://www.npmjs.com/package/react-vertical-stepers)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-A flexible and customizable **vertical stepper** component for React, supporting **nested steppers** and **accordion views**, built with `antd` and with pure state based.
+<!-- A flexible and customizable **vertical stepper** component for React, supporting **nested steppers** and **accordion views**, built with `antd` and with pure state based.
+
+--- -->
+
+A customizable React component library for building vertical steppers — supports nested collapsible steps (accordion-style) with active, completed, and waiting statuses.
+
+Ideal for:
+
+- Onboarding flows
+- Multi-step forms
+- Wizard-style interfaces
+- Task progress trackers
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- Vertical stepper UI with styled steps
-- Accordion-enabled nested steps
-- Status-based icons (`finish`, `wait`)
-- Ant Design (`antd`) based styling
-- Fully customizable using props and CSS
-- React 18 & 19 compatible
+- ✅ **Vertical Stepper UI**
+- 🪜 **Nested Steps** with collapsible accordion support
+- 🎯 **Step States**: Active, Completed, Waiting
+- 🎨 Easily customizable styles
+- 💡 Lightweight and framework-friendly
 
 ---
 
 ## 📸 Demo Screenshot
 
-### Step 1
+### Initial Stepper
 
-![Initial Stepper](./assets/stepper-demo-images/initial-stepper.jpg)
+![Initial Stepper](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/assets/stepper-demo-images/initial-stepper.jpg)
 
-### Step 2
+### Active Step
 
-![Active Step](./assets/stepper-demo-images/current-step-rendered.jpg)
+![Active Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/assets/stepper-demo-images/current-step-rendered.jpg)
 
-### Step 3
+### Inner Finish Step
 
-![Inner Finish Step](./assets/stepper-demo-images/accordion-step-with-green-tick.jpg)
+![Inner Finish Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/assets/stepper-demo-images/accordion-step-with-green-tick.jpg)
 
-### Step 4
+### Finished Step
 
-![Finished Step](./assets/stepper-demo-images/finished-steps.jpg)
+![Finished Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/assets/stepper-demo-images/finished-steps.jpg)
 
 ## 📦 Installation
 

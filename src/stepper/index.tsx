@@ -1,7 +1,7 @@
 import { Collapse } from "antd";
-import CollapseArrowDownIcon from "./assets/collapse-arrow-down.svg";
-import GreenSimpleTick from "./assets/green-simple-tick.svg";
-import StepFinishCheck from "./assets/step-finish-check.svg";
+import collapseArrowDown from "./assets/collapse-arrow-down.svg";
+import greenSimpleTick from "./assets/green-simple-tick.svg";
+import stepFinishCheck from "./assets/step-finish-check.svg";
 import "./custom-stepper.scss"; // Extract CSS here
 
 const Stepper = ({
@@ -65,7 +65,7 @@ const Stepper = ({
                 <div className="steps-item-tail" />
                 <div className="steps-item-icon flex justify-center items-center ">
                   {item.status === "finish" ? (
-                    <img src={StepFinishCheck} className="" />
+                    <img src={stepFinishCheck} className="" />
                   ) : null}
                 </div>
                 <div className="steps-item-content">
@@ -74,7 +74,7 @@ const Stepper = ({
                     expandIcon={({ isActive }) => {
                       return (
                         <img
-                          src={CollapseArrowDownIcon}
+                          src={collapseArrowDown}
                           alt="img"
                           width={"18px"}
                           className={`mt-2 ${
@@ -134,7 +134,7 @@ const Stepper = ({
                                         : stepperState[innerItem?.dataKey])?.[
                                         "status"
                                       ] === "finish" ? (
-                                        <img src={GreenSimpleTick} />
+                                        <img src={greenSimpleTick} />
                                       ) : (
                                         ""
                                       )}
@@ -204,7 +204,7 @@ const Stepper = ({
                 <div className="steps-item-tail" />
                 <div className="steps-item-icon flex justify-center items-center ">
                   {item.status === "finish" ? (
-                    <img src={StepFinishCheck} className="" />
+                    <img src={stepFinishCheck} className="" />
                   ) : null}
                 </div>
                 <div className="steps-item-content">

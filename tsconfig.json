@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx", // 👈 Important for React 17+
-    "target": "esnext",
+    "target": "es5",
     "module": "esnext",
     "moduleResolution": "node",
     "lib": ["dom", "esnext"],
@@ -12,6 +12,13 @@
     "skipLibCheck": true,
     "strict": true
   },
-  "include": ["src", "types/**/*.d.ts", "index.tsx", "types", "index.tsx"],
+  "include": [
+    "src/",
+    "src/types/**/*.d.ts",
+    "src/stepper/assets/",
+    "src/stepper/custom-stepper.scss",
+    "src/stepper/index.tsx",
+    "src/types/"
+  ],
   "exclude": ["node_modules", "dist"]
 }
