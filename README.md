@@ -32,19 +32,19 @@ Ideal for:
 
 ### Initial Stepper
 
-![Initial Stepper](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/assets/stepper-demo-images/initial-stepper.jpg)
+![Initial Stepper](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/src/stepper/assets/stepper-demo-images/initial-stepper.jpg)
 
 ### Active Step
 
-![Active Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/assets/stepper-demo-images/current-step-rendered.jpg)
+![Active Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/src/stepper/assets/stepper-demo-images/current-step-rendered.jpg)
 
 ### Inner Finish Step
 
-![Inner Finish Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/assets/stepper-demo-images/accordion-step-with-green-tick.jpg)
+![Inner Finish Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/src/stepper/assets/stepper-demo-images/accordion-step-with-green-tick.jpg)
 
 ### Finished Step
 
-![Finished Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/assets/stepper-demo-images/finished-steps.jpg)
+![Finished Step](https://raw.githubusercontent.com/pranaypsurve/react-vertical-steppers/refs/heads/dev/src/stepper/assets/stepper-demo-images/finished-steps.jpg)
 
 ## 📦 Installation
 
@@ -96,7 +96,7 @@ Here’s a basic example like above image:
 
 ```tsx
 import { useState } from "react";
-import "./App.css";
+import "../node_modules/react-vertical-stepers/dist/index.css"; // it will be removed in future versions
 import Stepper from "./components";
 
 const dummyList = [

@@ -1,6 +1,6 @@
 {
   "name": "react-vertical-stepers",
-  "version": "1.0.32",
+  "version": "1.0.35",
   "description": "A customizable React component library for building vertical steppers with support for nested, collapsible steps and active/completed/waiting states.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -39,5 +39,25 @@
   "files": [
     "dist",
     "README.md"
-  ]
+  ],
+  "keywords": [
+  "react",
+  "vertical stepper",
+  "stepper",
+  "react stepper",
+  "multi-step form",
+  "wizard",
+  "accordion stepper",
+  "nested stepper",
+  "react accordion",
+  "step progress",
+  "stepper component",
+  "form wizard",
+  "react UI component",
+  "step navigation",
+  "collapsible steps",
+  "progress tracker",
+  "react onboarding",
+  "react vertical steps"
+]
 }
